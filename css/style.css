@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding: 9px 20px;
+
+}
+
+.logo a{
+  padding: 1px;
+}
+
+nav{
+    background-color: #EC9627;
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block; 
+}
+
+nav ul li a{
+  display: block;
+  padding: 13px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+nav ul li:hover{
+  background-color:#f0ab52 ;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.sous{
+    display: none;
+    background-color: #EC9627;
+    position: absolute;
+    width: 190px;
+    z-index: 1;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 190px;
+    text-align: left;
+}
+.sous a{
+    border-bottom: none;
+    width: 150px;
+}
+.sous a:hover{
+    
+    background-color: #f2b668 ;
+    width: 190px;
+}
+.deroulant > a::after{
+    content:"▼";
+    font-size: 12px;
+}
+
+
+
+.conteneur{
+  margin: 50px 20px;
+  height: 1500px;
+}
+
+
+.container {
+   padding: 20px;
+   text-align: center;
+   margin: 0 auto;
+   max-width: 800px; /* Modifier la valeur en fonction de vos besoins */
+   
+}
+
+.container h1 {
+   text-align: center;
+   font-family: 'Pangolin', cursive  ;
+}
+
+.container p {
+   text-align: left;
+   margin: 0;
+   padding: 20px;
+}
+.artworks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Trois colonnes de taille égale */
+  gap: 20px; /* Espacement entre les dessins */
+  padding-top: 20px; /* Ajoute un padding pour la première ligne */
+  padding-left: 20px;
+  padding-right:20px;
+}
+
+.artwork {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Centrer horizontalement le contenu */
+  overflow: hidden; /* Cacher le débordement pour les effets de zoom */
+  width: 100%; /* Utiliser 100% de la largeur disponible */
+  padding-bottom: 100%; /* Créer un espace réservé égal à la largeur pour maintenir le rapport hauteur/largeur */
+}
+
+.artwork img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Remplir complètement l'espace réservé */
+  height: 100%; /* Remplir complètement l'espace réservé */
+  object-fit: cover; /* Redimensionner l'image pour qu'elle couvre tout l'espace en conservant son rapport hauteur/largeur */
+  transition: transform 0.3s; /* Ajouter une transition fluide lors du zoom */
+  z-index: 1;
+}
+
+.artwork-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.artwork:first-child {
+  padding-top: 0; /* Supprime le padding pour la première ligne */
+}
+
+.artwork.zoomed img {
+  transform: scale(1.2); /* Appliquer un effet de zoom lorsque la classe 'zoomed' est présente */
+  cursor: zoom-out; /* Changer le curseur en dézoomer lorsque la classe 'zoomed' est présente */
+  z-index: 1;
+}
+a {
+  font-family: 'Pangolin', cursive;
+  text-decoration: none;
+  color: #ec9627;
+}
+
+.link-2d a {
+
+}
+@font-face {
+  font-family: 'Pangolin';
+  src: url('pangolin.woff2') format('woff2'),
+       url('pangolin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+    }
+.titre {
+     color: black;   
+    }
+
+.grid {
+  display: flex;
+  gap: 5px; /* Espacement entre les images */
+}
+.grid-opposé {
+  display: flex;
+  gap: 5px; /* Espacement entre les images */
+  padding-right: 30px;
+}
+
+.grid img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.5s; /* Transition pour le mouvement fluide */
+  z-index: 1;
+}
+
+img {
+   z-index: 1;
+   border-radius: 10px;
+}
+
+.zoom-container {
+  overflow: hidden; /* Pour masquer les parties de l'image en dehors du conteneur */
+  width: 613px; /* Largeur du conteneur */
+  height: 613px; /* Hauteur du conteneur */
+}
+
+.zoom-image {
+  transition: transform 0.3s ease; /* Animation de transition pour un effet fluide */
+  border-radius: 10px;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.2); /* Augmenter la taille de l'image de 20% au survol */
+}
+
+
+
+p a {
+  color: black;
+}
+
+span a {
+  color: white;
+}
+.li:hover {
+  display: block;
+}
+
+.menu-roulant{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.menu-roulant img{
+  width: 400px;
+  height: 400px;
+}
+
+
+.sous-titre{
+
+}
+
+
+
+input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 20px;
+  border: 5px solid #277dec ;
+  width: 400px;
+
+} 
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.125em rgba(49, 130, 206, 0.25);
+  border-color: black;
+}
+input.is-error {
+  border-color: #e53e3e;
+}
+
+
+
+  .card{
+  background-color:#EC9627 ;
+  color: white;
+  font-size: 20px;
+  font-family: 'Pangolin';
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left: 40px;
+  padding-right: 100px;
+  max-width: 800px;
+  border-radius: 1px;
+  border-block:black 10px;
+
+}
+
+.card-1{
+  background-color:#EC9627 ;
+  color: white;
+  font-size: 20px;
+  font-family: 'Pangolin';
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left: 0px;
+  padding-right: 100px;
+  max-width: 800px;
+  border-radius: 1px;
+  border-block:black 10px;
+}
+
+.card-1 img{
+  width: 800px;
+}
+
+
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #EC9627 ;
+  padding: 10px;
+}
+
+.grid-container > div {
+  
+
+  padding: 20px 0;
+ 
+}
+
+#btn{
+    display: none;
+}
+
