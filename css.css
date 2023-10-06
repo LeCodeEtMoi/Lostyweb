@@ -1,0 +1,160 @@
+body{
+  background-color: #d1e1f5;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+nav {
+  background-color: #e2346b;
+  color: #fff;
+  display: flex; /* Ajout de display: flex; */
+  align-items: center; /* Pour centrer verticalement les éléments */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 9px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  background-color: #ec799e;
+}
+
+}
+h1 {
+  font-family: sans-serif;
+
+}
+.container {
+   padding: 20px;
+   text-align: left;
+   margin: 0 auto;
+   max-width: 800px; /* Modifier la valeur en fonction de vos besoins */
+  
+}
+
+.container h1 {
+   text-align: center;
+   font-weight: bold;
+   font-family: sans-serif;
+}
+
+.container p {
+   text-align: left;
+   margin: 0;
+   padding: 20px;
+   
+}
+
+.container li {
+    text-align: lefts;
+}
+
+.container img {
+  margin-right: 30px; /* Espacement entre l'image et le texte */
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
+}
+
+
+  .card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 800px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre */
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  text-align: left;
+
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Liens dans .card-content */
+.card-content a {
+  display: inline-block;
+  color: #e2346b;
+  font-weight: bold;
+  border-radius: 4px;
+  font-family: sans-serif;
+}
+
+/* Bouton avec lien */
+button {
+  background-color: #e2346b;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  float: right; 
+}
+
+/* Texte dans le bouton avec lien */
+button .a {
+  color: white;
+}
+
+/* Texte dans un lien à l'intérieur d'un bouton */
+button .a:hover {
+ }
