@@ -1,44 +1,48 @@
-       console.log('yo')
+ localStorage.clear();
+  // Quand il y a un clique on cherche l'id puis on l'envoie dans un localStorage
+// Écouter l'événement de réception de message
+window.addEventListener("message", function(event) {
+  // event.data contient le message reçu
+  console.log("Message reçu : " + event.data);
+});
 
-       const imagesData = [
-    {
-    title: "Chonk Thor",
-    description: "Description de l'image 1",
-    imagePath: "Image2D/antoine-losty-asset_016.jpg"    
-  },
-  {
-    title: "Image 2",
-    description: "Description de l'image 2",
-    imagePath: "chemin_vers_image_2.jpg"
-  },
-  // ... continuez pour les autres images
-];
+var nombre = localStorage.getItem("monChat");
+console.log(nombre)
 
-        // // Obtenez le nom de l'image à partir de la chaîne de requête de l'URL
-        // const queryString = window.location.search;
-        // const urlParams = new URLSearchParams(queryString);
-        // const imageName = urlParams.get('image');
-        
-        // // Affichez la description de l'image
-        // const imageDescription = document.getElementById('imageDescription');
-        // imageDescription.textContent = `Description de l'image : ${imageName}`;
-        
-        // // Affichez l'image
-        // const imageContainer = document.getElementById('imageContainer');
-        // const image = document.createElement('img');
-        // // image.src = `Image2D/${imageName}`;
-        // // image.alt = imageName;
-        // // imageContainer.appendChild(image);
 
-        // Extraction du titre
 
-        
-// Récupérez le nom depuis le localStorage
-const nom = localStorage.getItem('nom');
 
-// Vérifiez si le nom existe dans le localStorage
-if (nom) {
-  console.log(`Je suis ${nom}`);
-} else {
-  console.log('Le nom n\'a pas été enregistré.');
-}
+  
+  console.log('Image.js')
+
+//Cherche dans la la data a quoi corespont le nombre ( si id de imageData = nombre 
+
+
+
+
+// Une fois trouvé envoyer les information à la page
+
+  let nomData = [ "Chonk Thor","Jack","Moon",]
+  let decriptionData = ["Description de l'image 1 est bien et genial",]
+  let urlData = ["toto",]
+
+
+var nom = nomData[nombre];
+var description = decriptionData[nombre];
+var url = urlData[nombre];
+console.log(nom)
+console.log(description)
+console.log(url)
+console.log(nomData)
+
+
+
+
+  // Voila ce qu'il faut faire récupere le nom , avec le nom on check imageData on repere si title est = à nom et si oui on affiche la description .
+// for (var i = 0; i < nomData.length; i++) {
+//   console.log(nomData[i]);
+// }
+
+  
+
+
