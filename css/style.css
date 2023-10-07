@@ -329,3 +329,29 @@ input.is-error {
     display: none;
 }
 
+button {
+  background-color: #e38914;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+}
+button:hover {
+  background-color: #f0ab52;
+  font-family: sans-serif;
+  font-weight: bold;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+}
